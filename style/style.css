@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.form-container {
+  background: white;
+  padding: 4em 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.form-container.active {
+  opacity: 1;
+  transform: rotateY(0);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #333;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+.form-label {
+  position: absolute;
+  top: 0.45em;
+  left: 0.5em;
+  color: #666;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #71b7e6;
+  background-color: #e0f7ff;
+  outline: none;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  top: -1.4em;
+  left: 0.5em;
+  font-size: 0.75em;
+  color: #71b7e6;
+}
+
+.form-button {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 4px;
+  background: #71b7e6;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-button:hover {
+  background: #9b59b6;
+}
+
+.form-switch {
+  background: transparent;
+  color: #71b7e6;
+  text-decoration: underline;
+  cursor: pointer;
+  border: 1px solid #71b7e6;
+}
+
+.form-switch:hover {
+  color: #9b59b6;
+}

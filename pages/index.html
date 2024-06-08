@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <form class="form-container register active">
+      <h1 class="form-header">Registration</h1>
+      <div class="form-group">
+        <input class="form-input" type="text" id="user_name" placeholder=" " />
+        <label class="form-label" for="user_name">Ismingizni kiriting</label>
+      </div>
+      <div class="form-group">
+        <input
+          class="form-input"
+          type="email"
+          id="user_email"
+          placeholder=" "
+        />
+        <label class="form-label" for="user_email">Emailni kiriting</label>
+      </div>
+      <div class="form-group">
+        <input
+          class="form-input"
+          type="password"
+          id="user_password"
+          placeholder=" "
+        />
+        <label class="form-label" for="user_password">Parolni kiriting</label>
+      </div>
+      <button class="form-button" type="submit">Kirish</button>
+      <button class="form-switch switch-login" type="button">Login</button>
+    </form>
+
+    <form class="form-container login">
+      <h1 class="form-header">Login</h1>
+      <div class="form-group">
+        <input
+          class="form-input"
+          type="email"
+          id="login_email"
+          placeholder=" "
+        />
+        <label class="form-label" for="login_email">Emailni kiriting</label>
+      </div>
+      <div class="form-group">
+        <input
+          class="form-input"
+          type="password"
+          id="login_password"
+          placeholder=" "
+        />
+        <label class="form-label" for="login_password">Parolni kiriting</label>
+      </div>
+      <button class="form-button" type="submit">Kirish</button>
+      <button class="form-switch switch-register" type="button">
+        Akkauntingiz yo'qmi
+      </button>
+    </form>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
