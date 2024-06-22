@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <a href="./home.html">Home</a>
+    <h1>Create your movie</h1>
+    <form class="movie-form">
+      <label for="movie__title">Movie title</label>
+      <input type="text" id="movie__title" /><br />
+      <select class="movie-genres"></select
+      ><br />
+      <label for="movie__stock">Movie stock</label>
+      <input type="number" id="movie__stock" /><br />
+
+      <label for="movie__rate">Movie rate</label>
+      <input type="number" id="movie__rate" /><br />
+
+      <button type="submit">Submit</button>
+      <p style="color: red" class="form-error"></p>
+    </form>
+    <div id="toastBox"></div>
+    <script src="../js/movies.js"></script>
+  </body>
+</html>
